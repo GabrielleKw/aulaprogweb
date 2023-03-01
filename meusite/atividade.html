@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title> Meu primeiro HTML </title>
+
+</head>
+<style>
+    body {
+        border: 2px solid rgb(80, 180, 184);
+        font-family: Arial, sans-serif;
+        background-color: rgb(234, 240, 240);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .formulario {
+        width: 110px;
+        margin: 0 auto;
+        border: 1px solid rgb(80, 180, 184);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(80, 180, 184);
+        background-color: aliceblue;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 15px;
+        text-align: center;
+        display: block;
+        width: 60%;
+        background-color: rgb(128, 243, 243);
+        font-size: 16px larger;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+    input[type="number"] {
+        width: 100px;
+        border-radius: 5px;
+        border: 1px solid rgb(80, 180, 184);
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    #resultado {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+</style>
+
+
+<body>
+
+
+
+    <h1 style="color: black;"> Nota Promissória </h1>
+    <div class="formulario">
+        <label> Qtd. promissória? </label>
+        <input class="input-verde" type="number" id="qntpromissoria" />
+        <label> Valor: </label>
+        <input class="input-vermelho" type="number" id="valor" />
+        <label> 1º Vencimento: </label>
+        <input class="input-vermelho" type="number" id="vencimentoUm" />
+        <label> Nome do Credor: </label>
+        <input class="input-vermelho" id="nomeCredo" />
+        <label> CPF ou CNPJ do credor: </label>
+        <input class="input-vermelho" type="number" id="cpfCredo" />
+
+    <h1 style="color: black;"> Nota Promissória </h1>
+        <label> Nome do Devedor: </label>
+        <input class="input-vermelho" id="nomeCredo" />
+        <label> CPF ou CNPJ do Devedor: </label>
+        <input class="input-vermelho" type="number" id="cpfCredo" />
+        <label> CPF ou CNPJ do Devedor: </label>
+        <input class="input-vermelho" type="number" id="cpfDevedor" />
+        <label> Rua : </label>
+        <input class="input-vermelho"  id="ruaDevedor" />
+        <label> Ponto referência: : </label>
+        <input class="input-vermelho" id="pontoRefDevedor" />
+        <label> Ponto referência: : </label>
+        <input class="input-vermelho" id="pontoRefDevedor" />
+
+
+        
+        <button id="botao"> Calcular </button>
+
+
+
+        <div id="resultado">
+
+        </div>
+
+
+    </div>
+
+</body>
