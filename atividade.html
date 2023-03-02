@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title> Meu primeiro HTML </title>
+
+</head>
+<style>
+    body {
+        border: 2px solid rgb(80, 180, 184);
+        font-family: Arial, sans-serif;
+        background-color: rgb(234, 240, 240);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .formulario {
+        width: 990px;
+        margin: 0 auto;
+        border: 1px solid rgb(80, 180, 184);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(80, 180, 184);
+        background-color: aliceblue;
+    }
+
+   
+
+    button {
+        margin-top: 15px;
+        text-align: center;
+        display: block;
+        width: 20%;
+        background-color: rgb(128, 243, 243);
+        font-size: 16px larger;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+    input[type="number"] {
+        width: 100px;
+        border-radius: 5px;
+        border: 1px solid rgb(80, 180, 184);
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    input[type="text"] {
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid rgb(80, 180, 184);
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+
+    #resultado {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .observa{
+        width: 800px;
+        border-radius: 5px;
+        border: 1px solid rgb(80, 180, 184);
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+</style>
+
+
+<body>
+
+
+
+    <h1 style="color: black;"> Nota Promissória </h1>
+    <div class="formulario">
+        <label> Qtd. promissória? </label>
+        <input  type="number" id="qntpromissoria" />
+        <label> Valor: </label>
+        <input type="number" id="valor" />
+        <label> 1º Vencimento: </label>
+        <input  type="number" id="vencimentoUm" />
+        <label> Nome do Credor: </label>
+        <input  type="text" id="nomeCredo" />
+        <p></p>
+        <label> CPF ou CNPJ do credor: </label>
+        <input  type="number" id="cpfCredo" />
+
+    <h1 style="color: black; align-items: center"> Dados do Devedor </h1>
+        <label> Nome do Devedor: </label>
+        <input type="text"  id="nomeCredo" />
+        <label> CPF ou CNPJ do Devedor: </label>
+        <input type="number" id="cpfCredo" />
+       
+        <label> Rua: </label>
+        <input type="text"  id="ruaDevedor" />
+        <label> Ponto referência:  </label>
+        <input type="text"  id="pontoRefDevedor" />
+        <label> Número: </label>
+        <input type="number"  id="numDevedor" />
+        <label> Bairro: </label>
+        <input type="text"  id="bairroDevedor" />
+        <label> Cidade: </label>
+        <input type="text"  id="cidadeDevedor" />
+        <label> Estado: </label>
+        <input type="text"  id="estadoDevedor" />
+        <label> CEP: </label>
+        <input type="number"  id="cepDevedor" />
+
+        <p></p>
+        <label> Observação: (opcional): </label>
+        <input class="observa" id="obsDevedor" />
+
+
+
+        <button id="botao"> Gerar Promissória </button>
+
+        <script>
+            function gerarDocumento(){
+                var altura = document.getElementById("altura").value;
+                var peso = document.getElementById("peso").value;
+                var resultado;
+                if(altura>0 && peso>0){
+                    resultado = peso/(altura*altura);
+                }else{
+                    resultado="Informe o peso e a altura"
+                }
+                var divResultado = document.getElementById("resultado");
+                divResultado.innerHTML = resultado;
+            }
+    
+    
+        
+        </script>
+
+
+        <div id="resultado">
+
+        </div>
+
+
+    </div>
+
+</body>
